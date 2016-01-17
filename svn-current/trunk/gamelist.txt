@@ -1,6 +1,6 @@
 This list contains all games supported by FB Alpha.
 
-5982 games supported in total; X = excluded from build; D = included in debug build only; NW = not working
+5983 games supported in total; X = excluded from build; D = included in debug build only; NW = not working
 
   name		  status  full name						  parent	  year	  company	  hardware	  remarks
 +---------------+-------+-------------------------------------------------------+---------------+-------+---------------+---------------+---------------------------------------+
@@ -993,6 +993,7 @@ This list contains all games supported by FB Alpha.
 | crospang	|  	| Cross Pang						| 		| 1998	| F2 System	| Miscellaneous	| 					|
 | pce_xwiber	|  	| Cross Wiber - Cyber Combat Police			| 		| 1990	| Face		| PC Engine	| 					|
 | crsword	|  	| Crossed Swords (ALM-002)(ALH-002)			| 		| 1991	| Alpha Denshi C| Neo Geo MVS	| 					|
+| cphd		|	| Crouching Poney Hidden Dragon				| cphd		| 2013	| LeCortex.	| Neo Geo MVS	|					|
 | cthd2003	|  	| Crouching Tiger Hidden Dragon 2003 (set 1)		| kof2001	| 2003	| Phenixsoft	| Neo Geo MVS	| Hack of \"The King of Fighters 2001\"	|
 | cthd2k3a	|  	| Crouching Tiger Hidden Dragon 2003 (set 2)		| kof2001	| 2003	| bootleg	| Neo Geo MVS	| 					|
 | ct2k3sp	|  	| Crouching Tiger Hidden Dragon 2003 Super Plus		| kof2001	| 2003	| bootleg	| Neo Geo MVS	| 					|

@@ -14561,3 +14561,33 @@ struct BurnDriver BurnDrvneoprimo = {
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	304, 224, 4, 3
 };
+
+static struct BurnRomInfo cphdRomDesc[] = {
+        { "cphd.p1",    0x100000, 0x22a0497d, 1 | BRF_ESS | BRF_PRG },          //  0 68K Code
+        { "cphd.p2",    0x800000, 0x309f7a66, 1 | BRF_ESS | BRF_PRG },          //  1
+
+        { "cphd.s1",    0x020000, 0x1023a1a3, 2 | BRF_GRA },                    //  2 Text data
+
+        { "cphd.c1",    0x2000000, 0xaa96de6f, 3 | BRF_GRA },                   //  3 Sprite data
+        { "cphd.c2",    0x2000000, 0x938e53f9, 3 | BRF_GRA },                   //  4
+        { "cphd.c3",    0x2000000, 0x9943dba6, 3 | BRF_GRA },                   //  5
+        { "cphd.c4",    0x2000000, 0x23a2c6f7, 3 | BRF_GRA },                   //  6
+
+        { "cphd.m1",    0x010000,  0x5d996812, 4 | BRF_ESS | BRF_PRG },         //  7 Z80 code
+
+        { "cphd.v1",    0x2000000, 0x4e1e2d58, 5 | BRF_SND },                   //  8 Sound data
+        { "cphd.v2",    0x2000000, 0x0dba2aa9, 6 | BRF_SND },                   //  8 Sound data
+};
+
+STDROMPICKEXT(cphd, cphd, neogeo)
+STD_ROM_FN(cphd)
+
+struct BurnDriver BurnDrvcphd = {
+        "cphd", NULL, "neogeo", NULL, "2015",
+        "Crouching Poney Hidden Dragon \0", NULL, "Le Cortex", "Neo Geo",
+        NULL, NULL, NULL, NULL,
+        BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_SNK_NEOGEO, GBF_MISC, 0,
+        NULL, cphdRomInfo, cphdRomName, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+        NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+        0x1000, 304, 224, 4, 3
+};

@@ -1021,6 +1021,7 @@ DRV		BurnDrvmd_xfire;
 DRV		BurnDrvCrospang;
 DRV		BurnDrvpce_xwiber;
 DRV		BurnDrvcrsword;
+DRV		BurnDrvcphd;
 DRV		BurnDrvcthd2003;
 DRV		BurnDrvcthd2k3a;
 DRV		BurnDrvct2k3sp;
@@ -7140,6 +7141,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCrospang,			// Cross Pang
 	&BurnDrvpce_xwiber,			// Cross Wiber - Cyber Combat Police
 	&BurnDrvcrsword,			// Crossed Swords (ALM-002)(ALH-002)
+	&BurnDrvcphd,				// Crouching Poney Hidden Dragon
 	&BurnDrvcthd2003,			// Crouching Tiger Hidden Dragon 2003 (set 1)
 	&BurnDrvcthd2k3a,			// Crouching Tiger Hidden Dragon 2003 (set 2)
 	&BurnDrvct2k3sp,			// Crouching Tiger Hidden Dragon 2003 Super Plus
